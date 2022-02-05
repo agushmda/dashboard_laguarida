@@ -6,7 +6,7 @@ export const cardsMetrics = [
         icon: 'fa-clipboard-list'
     },
     {
-        title:'Total de ventas', 
+        title:'Total de categorias', 
         color:'success', 
         cuantity: '79',
         icon:'fa-award'
