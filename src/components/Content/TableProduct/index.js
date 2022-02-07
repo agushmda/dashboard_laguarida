@@ -10,11 +10,11 @@ function Tables () {
     const [products, setProducts] = useState([]);
     const [page, setPage] = useState(1);
     
-    const baseUri = 'http://localhost:8080'
+    const baseLaGuarida = 'http://localhost:8080'
 
     useEffect(() => {
         console.log(`entre al effect con ${page}`);
-        fetch(`${baseUri}/api/products/?page=${page}`)
+        fetch(`${baseLaGuarida}/api/products/?page=${page}`)
             .then(res => res.json())
             .then(data => {
                 setProducts(data.products);
@@ -34,8 +34,10 @@ function Tables () {
 
     console.log(products);
     return (
-        /* <!-- DataTales Example --> */
+        <div>
+        <h4>Tabla de Productos</h4>
         <div className="card shadow mb-4">
+            
             <div className="card-body">
                 <div className="table-responsive">
                     <table className="table table-bordered" id="dataTable" width="100%" cellSpacing="0">
@@ -73,7 +75,7 @@ function Tables () {
                 </div>
             </div>
         </div>
-
+        </div>
     )
 }
 

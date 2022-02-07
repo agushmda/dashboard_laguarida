@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
 function Last(){
+
+    let style = {
+        color: 'black',
+        fontWeight: 'bolder'
+    }
     
     const [products, setProducts] = useState([]);
 
@@ -22,6 +27,7 @@ function Last(){
                     <div className="text-center">
                         <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={products.length > 0 ? `http://localhost:8080/images/products/${products[products.length - 1].image}` : null} alt='Imagen ultimo producto en db' />
                     </div>
+                    <h5 style={style}>{products.length > 0 ? products[products.length - 1].name : null}</h5>
                     <p>{products.length > 0 ? products[products.length - 1].description : null}</p>
                     <a className="btn btn-warning" target="_blank" rel="nofollow" href="/">Mirar el detalle del producto</a>
                 </div>

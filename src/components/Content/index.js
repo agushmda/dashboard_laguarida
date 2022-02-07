@@ -2,7 +2,8 @@ import React from "react";
 import react from "react";
 import Metrics from "./Metrics";
 import Cards from "./Cards"
-import Tables from "./Tables";
+import TableProduct from "./TableProduct";
+import TableUser from "./TableUser"
 
 function Content(){
     return(
@@ -15,7 +16,9 @@ function Content(){
 
                                 <Metrics />
                                 <Cards />
-                                <Tables />
+                                <TableProduct />
+                                <TableUser />
+
 
 
                             </div>       

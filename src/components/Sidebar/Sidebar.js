@@ -31,13 +31,12 @@ function Sidebar(){
                 </Link>
 			</li>
 
-			{/*<!-- Divider -->*/}
-			<hr className="sidebar-divider" />
+			
+			{/* <hr className="sidebar-divider" />
 
-			{/*<!-- Heading -->*/}
+			
 			<div className="sidebar-heading">Actions</div>
 
-			{/*<!-- Nav Item - Pages -->*/}
 			<li className="nav-item">
 				<Link className="nav-link collapsed" to="/">
 					<i className="fas fa-fw fa-folder"></i>
@@ -45,7 +44,7 @@ function Sidebar(){
                 </Link>
 			</li>
 
-			{/*<!-- Nav Item - Charts -->*/}
+			
 			<li className="nav-item">
 				<Link className="nav-link" to="/">
 					<i className="fas fa-fw fa-chart-area"></i>
@@ -53,7 +52,7 @@ function Sidebar(){
                 </Link>
 			</li>
 
-			{/*<!-- Nav Item - Tables -->*/}
+			
 			<li className="nav-item">
 				<Link className="nav-link" to="/">
 					<i className="fas fa-fw fa-table"></i>
@@ -61,9 +60,11 @@ function Sidebar(){
                 </Link>
 			</li>
 
-			{/*<!-- Divider -->*/}
+			
 			<hr className="sidebar-divider d-none d-md-block" />
-		</ul>
+		*/}
+		</ul> 
+
 		{/*<!-- End of Sidebar -->*/}
         </React.Fragment>
     )
